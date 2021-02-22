@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise AI | Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://image.flaticon.com/icons/png/512/742/742751.png">
+        <link href="index.js">
+        <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/css/uikit.min.css" />
+<!--bootstrap da ithu-->
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        <nav class="uk-navbar-container uk-margin" uk-navbar>
+            <div class="uk-navbar-left">
+        
+                <a class="uk-navbar-item uk-logo" href="#"><img src="https://image.flaticon.com/icons/png/512/742/742751.png"width="5%">Enterprise AI</a>
+        
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">Hello Abhishree<script>id.value</script></a></li>
+                    <li><a href="page.html">Logout</a></li>
+                </ul>
+        
+            </div>
+            <div class="uk-navbar-right">
+        
+                <div>
+                  
+                    <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                    <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                        <form class="uk-search uk-search-navbar uk-width-1-1">
+                            <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                        </form>
+                    </div>
+                </div>
+        
+            </div>
+        </nav>
+        <h2 style="text-align: center;">Healthy Food !! Healthy Life !!</h2>
+        <div class="marquee-container">
+            <div class="marquee">
+              <div class="item">
+                <div class="card"><img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/nm00qtelgurwavkmvyfc" width="50%"></div> 
+              </div>
+              <div class="item">
+                <div class="card"><img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/Swiggy-Dash/nf54kffc2cgtzanwwuzu"width="50%"></div> 
+              </div>
+              <div class="item">
+                <div class="card"><img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2018/03/08174730/Swiggy.jpg" width="70%"></div> 
+              </div>
+              <div class="item">
+                <div class="card"><img src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/bxmx6xyneqem9vgaqffq" width="70%"></div> 
+              </div>
+              <div class="item">
+                <div class="card"><img src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-2241968,resizemode-1,msid-75676068/small-biz/startups/newsbuzz/marriott-on-wheels-ties-up-with-swiggy-for-food-delivery-service-initiative.jpg" width="70%"></div> 
+              </div>
+              <div class="item">
+                <div class="card"><img src="https://s01.sgp1.cdn.digitaloceanspaces.com/article/117714-fpfzghttxj-1555508155.jpg"></div> 
+              </div>
+              <div class="item">
+                <div class="card"><img src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2019/08/pjimage-8-1565181001.jpg" width="70%"></div> 
+              </div>
+              <div class="item">
+                <div class="card"><img src="https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20190130190608/Malabar-Thali.jpg" width="70%"></div> 
+              </div>
+              <div class="item">
+                <div class="card"><img src="https://static.toiimg.com/thumb/54289752.cms?width=800&height=533&imgsize=495844" width="70%"></div> 
+              </div>
+              <div class="item">
+                <div class="card"><img src="https://cms.hostelworld.com/hwblog/wp-content/uploads/sites/2/2017/06/canadian-foods-lobster-roll_c_neil-conway-flickr.jpg" width="70%"></div> 
+              </div>
+            </div>
+          </div>
+          <style>@use postcss-nested;
+            /* 
+            Animate the .marquee container, adjust the speed by changing the timing. Also, setting 'min-width' on .item is important.
+            */
+            :root {
+              --timing: 20000ms;
+              --width: 32rem;
+              --height: 16rem;
+            }
+            
+            .marquee {
+              display: flex;
+              animation: var(--timing) linear 0s infinite marquee;
+            }
+            
+            .marquee:hover {
+              animation-play-state: paused;
+            }
+            
+            .item {
+              display: flex;
+              min-width: calc(var(--width) / 1.5);
+              width: calc(var(--width) / 1.5);
+              height: calc(var(--height) / 1.5);
+              padding: 0 1em;
+              box-sizing: content-box;
+              
+              @media screen and (min-width: 36rem) {
+                min-width: var(--width);
+                width: var(--width);
+                height: var(--height);
+              }
+            }
+            
+            .card {
+              display: flex;
+              box-shadow: 0 8px 20px 0 rgba(0,0,0,0.15);
+              background: rgb(243, 243, 243);
+              border-radius: 0.75rem;
+              padding: 1rem;
+              font-size: 3rem;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              width: 100%;
+              
+               
+            }
+            
+            .marquee-container {
+              display: flex;
+              width: 100%;
+              font-size: 18px;
+              padding-top: 1rem;
+            }
+            
+            @keyframes marquee {
+              0% {
+                transform: translateX(0%);
+              }
+              100% {
+                transform: translateX(-100%);
+              }
+            }</style>
+            <script>/* 
+                Get the width of a single item, multiply by total # of items (10 in this case), then divide by 2 as well.
+                */
+                
+                const item = document.querySelector(".item");
+                const items = document.querySelectorAll(".item");
+                const marquee = document.querySelector(".marquee");
+                
+                const total = Array.from(items).length;
+                
+                marquee.style.width = `${(item.clientWidth * total) / 2}px`;</script>
+            <br><br>
+                <div uk-filter="target: .js-filter">
+
+                    <ul class="uk-subnav uk-subnav-pill" style="padding-left: 30%;">
+                        <li class="uk-active" uk-filter-control><a href="#">ALL DISHES</a></li>
+                        <li uk-filter-control="[data-color='white']"><a href="#">VEGITERIAN</a></li>
+                        <li uk-filter-control="[data-color='blue']"><a href="#">NON-VEGITETIAN</a></li>
+                        <li uk-filter-control="[data-color='black']"><a href="#">DESERTS</a></li>
+                    </ul>
+                
+                    <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+                        <li data-color="white">
+                            <div class="uk-card uk-card-default uk-card-body">Dosa<br><a href="Dosa.html"><img src="https://images.indianexpress.com/2020/04/dosa_1200.jpg" width="70%"></a></div>
+                        </li>
+                        <li data-color="blue">
+                            <div class="uk-card uk-card-default uk-card-body">Parotta<br><a href="parotta.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBFMJ_BEDzYl-aO_M0GnV346EzbiT50wK29A&usqp=CAU" width="40%"></a></div>
+                        </li>
+                        <li data-color="white">
+                            <div class="uk-card uk-card-default uk-card-body">Idli<br><img src="https://aratislife.com/wp-content/uploads/2017/08/indian-mumbai-street-food14.png" width="75%"></div>
+                        </li>
+                        <li data-color="white">
+                            <div class="uk-card uk-card-default uk-card-body">Poori<br><img src="https://www.bdmadi.com/wp-content/uploads/2018/09/rsz_poori-1.png"width="38%"></div>
+                        </li>
+                        <li data-color="black">
+                            <div class="uk-card uk-card-default uk-card-body">Mousse<br><a href="Mousse.html"><img src="https://media-cdn.tripadvisor.com/media/photo-s/13/7d/7a/a9/mousse-trio-chocolat.jpg"width="60%"></a></div>
+                        </li>
+                        <li data-color="black">
+                            <div class="uk-card uk-card-default uk-card-body">Glab-Jamun with Ice-Cream<br><img src="https://lh3.googleusercontent.com/-gq_yoYHhSuM/Vw_agkAA8KI/AAAAAAAAAn8/fO6s8lE2qzk/s1600/gulab-jamun-with-ice-cream.jng_-300x239.png"width="50%"></div>
+                        </li>
+                        <li data-color="blue">
+                            <div class="uk-card uk-card-default uk-card-body">Chicken Biryani<br><img src="https://miro.medium.com/max/424/1*tcgAC3_VXKKrXnzQ8FBwsg.png"width="50%"></div>
+                        </li>
+                        <li data-color="black">
+                            <div class="uk-card uk-card-default uk-card-body">Raspberry cake<br><img src="https://junketdesserts.com/wp-content/uploads/2020/02/junket_Rasberry-Danish.png" width="55%"></div>
+                        </li>
+                        <li data-color="blue">
+                            <div class="uk-card uk-card-default uk-card-body">BBQ-Chicken-Wings<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvPn_cvJPUlEq3fvyW-JzoH0aIg4rvibO8gg&usqp=CAU"width="51%"></div>
+                        </li>
+                        <li data-color="white">
+                            <div class="uk-card uk-card-default uk-card-body">Paneer Tikka<br><img src="https://5.imimg.com/data5/RJ/NE/GLADMIN-43264504/paneer-tikka-500x500.png"width="60%"></div>
+                        </li>
+                        <li data-color="blue">
+                            <div class="uk-card uk-card-default uk-card-body">Fish Fingers<br><img src="https://recipetineats.com/wp-content/uploads/2020/01/Fish-Fingers_8.jpg"width="25%"></div>
+                        </li>
+                        <li data-color="black">
+                            <div class="uk-card uk-card-default uk-card-body">Donut<br><img src="https://pngimg.com/uploads/donut/donut_PNG28.png"width="35%"></div>
+                        </li>
+                    </ul>
+                
+                </div>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Enterprise AI | LOGIN </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://image.flaticon.com/icons/png/512/742/742751.png">
+        <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit-icons.min.js"></script>
+    </head>
+    <body>
+        <nav class="uk-navbar-container uk-margin" uk-navbar>
+            <div class="uk-navbar-left">
+        
+                <a class="uk-navbar-item uk-logo" href="#"><img src="https://image.flaticon.com/icons/png/512/742/742751.png"width="5%">Enterprise AI</a>
+        
+                <ul class="uk-navbar-nav">
+                    <li><a href="varum.html">Today's daels</a></li>
+                    <li><a href="dono.html">Coustomer care</a></li>
+                    <li><a href="register.html">Sign up</a></li>
+                </ul>
+        
+            </div>
+            <div class="uk-navbar-right">
+        
+                <div>
+                    <a class="uk-navbar-toggle" uk-search-icon href="#"></a>
+                    <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                        <form class="uk-search uk-search-navbar uk-width-1-1">
+                            <input class="uk-search-input" type="search" placeholder="Search..." autofocus>
+                        </form>
+                    </div>
+                </div>
+        
+            </div>
+        </nav>
+        <br><br><br><br>
+        <div style="text-align: center;">
+            <h3 style="text-align: center;">LOGIN FORM</h3><br>
+        <form>
+
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <input class="uk-input" name="id" type="text" placeholder="username">
+                </div>
+            </div>
+        
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <input class="uk-input"name="pass"
+                    type="password" placeholder="password">
+                </div>
+            </div>
+            <p uk-margin>
+                <input type="button" value="Login"
+onClick="pasuser(this.form)">
+            </p>
+        
+        </form></div>
+        <script language="javascript">
+       
+            /*This Script allows people to enter by using a form that asks for a
+            UserID and Password*/
+            function pasuser(form) {
+            if (form.id.value=="pabhishree@gmail.com") { 
+            if (form.pass.value=="iamthebest1234") {              
+            location="index.html" 
+            } else {
+            alert("Invalid Password")
+            }
+            } else {  alert("Invalid UserID")
+            }
+            }
+          
+            </script>
+    </body>
+</html>

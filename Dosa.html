@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>Review Check Out</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/css/uikit.min.css" />
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/742/742751.png">
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.15/dist/js/uikit-icons.min.js"></script>  
+  </head>
+  <body>
+    <nav class="uk-navbar-container uk-margin" uk-navbar>
+      <div class="uk-navbar-left">
+  
+          <a class="uk-navbar-item uk-logo" href="#"><img src="https://image.flaticon.com/icons/png/512/742/742751.png"width="5%">Enterprise AI</a>
+  
+          <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="#">Hello Abhishree<script>id.value</script></a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="page.html">Logout</a></li>
+          </ul>
+  
+      </div>
+  </nav>
+    <div class="container">
+      <h1>Dish:&nbsp;<span style="color: rgb(27, 182, 61);">Dosa</span></h1>
+      <img src="https://images.indianexpress.com/2020/04/dosa_1200.jpg">
+      <p style="color: grey;">Price: 45.INR per piece<p>  
+        <p id="demo"></p>
+        <label for="new-task">Review:</label><input id="new-task" type="text"><button>Send</button>
+      </p>
+      
+      <h3>Comments</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label>Taste is not so good.</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        <li><input type="checkbox"><label>Poor quality.</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        <li><input type="checkbox"><label>It's good.</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        <li><input type="checkbox"><label>It's fine not to eat.</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        <li><input type="checkbox"><label>Flavour is not good.</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
+      
+      <!--<h3>Completed</h3>
+      <ul id="completed-tasks">
+        <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>--><div id="piechart"></div>
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
+    <script type="text/javascript">
+    // Load google charts
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    
+    // Draw the chart and set the chart values
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['GOOD', 10],
+      ['BAD', 7],
+      ['NEUTRAL', 17],
+    //  ['Gym', 2],
+     // ['Sleep', 8]
+    ]);
+    
+      // Optional; add a title and set the width and height of the chart
+      var options = {'title':'Emotional Pie', 'width':550, 'height':400};
+    
+      // Display the chart inside the <div> element with id="piechart"
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);
+    }
+    </script>
+
+  
+
+    <script type="text/javascript" src="app.js"></script>
+<script>document.write()</script>
+<!--sample or try-->
+<h1 style="text-align: center;"><button onclick="myFunction()"><strong>BUY</strong></button></h1>
+
+
+
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("Confirm order?")) {
+    txt = "Thank you for ordering!";
+  } else {
+    txt = "Oops!Order have been cancelled";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+  </body>
+</html>
